@@ -3,9 +3,11 @@ import About from "./pages/About";
 function App() {
   return (
     <>
-      <About />
-      <About />
-      <About />
+      <main className="main-area">
+        <About />
+        <About />
+        <About />
+      </main>
     </>
   );
 }

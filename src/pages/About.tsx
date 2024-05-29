@@ -5,7 +5,6 @@ import Card from "../components/Card/Card";
 function About() {
   return (
     <>
-      <main className="main-area">
         <section className="centered">
           <SectionTitle intro="Get to know more" title="About me" />
           <div className="cards">
@@ -50,7 +49,6 @@ function About() {
             </Card>
           </div>
         </section>
-      </main>
     </>
   );
 }
