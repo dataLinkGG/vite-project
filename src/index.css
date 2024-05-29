@@ -8,3 +8,43 @@
 @import url("CSS/nav-multi-level.css");
 @import url("CSS/nav-mixed.css");
 @import url("CSS/nav-social.css");
+
+:root {
+  --primary-color: #90ee90;
+  --secondary-color: #2e8b57;
+  --accent-color: #c76d29;
+  --accent-color-hover: #ff7300;
+  --background-color: #272138;
+  --text-color: #e7e7e7;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+@media screen and (min-width: 40em) {
+  .main-area {
+    flex: 1 1 auto;
+    order: 1;
+    height: 100vh;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .cards {
+    margin-top: inherit;
+  }
+}

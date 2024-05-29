@@ -1,0 +1,26 @@
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .sectionTitle {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .sectionTitle {
+    margin-bottom: 3rem;
+  }
+}
+
+.sectionTitle * {
+  margin: 0;
+}
+
+.sectionTitle p {
+  font-family: "Courier New", Courier, monospace;
+}
