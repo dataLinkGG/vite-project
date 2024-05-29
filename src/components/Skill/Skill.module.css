@@ -1,0 +1,55 @@
+article {
+  display: flex;
+  cursor: default;
+  margin: 1rem;
+  width: 13rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+article .icon {
+  width: 45px;
+  height: 45px;
+}
+
+article:hover {
+  transition: transform 0.4s ease-in;
+  transform: scale(1.1);
+}
+
+.proficiency1,
+.proficiency2,
+.proficiency3 {
+  font-weight: 800;
+  font-size: xx-small;
+  padding: 2px;
+  border-radius: 1px;
+  margin: 2px;
+  width: fit-content;
+}
+
+.proficiency1 {
+  --pro-color: rgb(172, 86, 0);
+  --pro-color-transludid: rgba(158, 97, 35, 0.2);
+  color: var(--pro-color);
+  background-color: var(--pro-color-transludid);
+  border: var(--pro-color) 1px solid;
+}
+
+.proficiency2 {
+  --pro-color: rgb(187, 187, 187);
+  --pro-color-transludid: rgba(146, 146, 146, 0.2);
+  color: var(--pro-color);
+  background-color: var(--pro-color-transludid);
+  border: var(--pro-color) 1px solid;
+}
+
+.proficiency3 {
+  --pro-color: rgba(218, 165, 32, 1);
+  --pro-color-translucid: rgba(218, 165, 32, 0.2);
+  color: var(--pro-color);
+  background-color: var(--pro-color-translucid);
+  border: var(--pro-color) 1px solid;
+}
