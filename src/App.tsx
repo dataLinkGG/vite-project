@@ -1,12 +1,12 @@
-import About from "./pages/About";
+import About from "./pages/Skills";
+import Skills from "./pages/Contact";
 
 function App() {
   return (
     <>
       <main className="main-area">
         <About />
-        <About />
-        <About />
+        <Skills />
       </main>
     </>
   );

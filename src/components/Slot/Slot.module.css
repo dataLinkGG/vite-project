@@ -1,0 +1,26 @@
+.slot {
+  border-radius: 1rem;
+  border: black 0.1rem dashed;
+  text-align: center;
+  margin-bottom: 2em;
+  flex: 0 0 30%;
+}
+
+@media screen and (min-width: 40em) {
+  .slot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1em;
+    flex: 0 1 calc(50% - 0.5em);
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .slot {
+    margin-top: inherit;
+    flex: 0 1 calc(33% - 1em);
+    margin-bottom: 2rem;
+  }
+}
