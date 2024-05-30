@@ -38,6 +38,7 @@ const Card: React.FC<CardProps> = ({
           <FontAwesomeIcon icon={faSearch} /> See More
         </div>
       </Button>
+
       <Modal
         title={modalTitle}
         open={modalOpen}

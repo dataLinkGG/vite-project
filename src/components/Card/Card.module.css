@@ -1,5 +1,5 @@
 .cardContent {
-  padding: 1.4em;
+  flex-basis: 60%;
 }
 
 .cardContent h2 {
@@ -13,14 +13,17 @@
 }
 
 .centeredButton {
-  display: flex;
-  position: relative;
+  flex-basis: 10%;
+  width: fit-content;
+  height: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 1rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   border-radius: 1rem;
   border: black 0.1rem dashed;
   text-align: center;
@@ -47,5 +50,6 @@
 }
 
 .thumbnail {
+  flex-basis: 20%;
   margin: 1rem;
 }

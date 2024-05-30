@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Skill.module.css";
 
 type proficiencyLevel = 1 | 2 | 3;
@@ -15,24 +16,20 @@ const proficiencyMap: proficiencyMap = {
 type SkillProps = {
   name: string;
   expertise?: number;
-  icon?: string;
+  children: React.ReactNode;
 };
 
-const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
+const Skill: React.FC<SkillProps> = ({ name, expertise, children }) => {
   const expertiseText = proficiencyMap[expertise as proficiencyLevel] ?? "";
 
   return (
-    <article>
-      <img
-        src={icon || "thomascionek/assets/checkmark.png"}
-        alt={`Experience in ${name}`}
-        className={styles.icon}
-      />
-      <div>
-        <h1>{name}</h1>
+    <div className={styles.skill}>
+      {children}
+      <div className={styles.skillDetails}>
+        <div style={{ width: "fit-content" }}>{name}</div>
         <div className={styles[`proficiency${expertise}`]}>{expertiseText}</div>
       </div>
-    </article>
+    </div>
   );
 };
 
