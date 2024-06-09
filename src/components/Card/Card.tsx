@@ -9,7 +9,7 @@ type CardProps = {
   description: string;
   icon: IconDefinition;
   modalTitle: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const Card: React.FC<CardProps> = ({
@@ -30,26 +30,30 @@ const Card: React.FC<CardProps> = ({
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-      <Button
-        className={styles.centeredButton}
-        onClick={() => setModalOpen(true)}
-      >
-        <div>
-          <FontAwesomeIcon icon={faSearch} /> See More
-        </div>
-      </Button>
+      {children ? (
+        <>
+          <Button
+            className={styles.centeredButton}
+            onClick={() => setModalOpen(true)}
+          >
+            <div>
+              <FontAwesomeIcon icon={faSearch} /> See More
+            </div>
+          </Button>
 
-      <Modal
-        title={modalTitle}
-        open={modalOpen}
-        onOk={() => setModalOpen(false)}
-        onCancel={() => setModalOpen(false)}
-        okText="Ok"
-        cancelText="Close"
-        footer
-      >
-        {children}
-      </Modal>
+          <Modal
+            title={modalTitle}
+            open={modalOpen}
+            onOk={() => setModalOpen(false)}
+            onCancel={() => setModalOpen(false)}
+            okText="Ok"
+            cancelText="Close"
+            footer
+          >
+            {children}
+          </Modal>
+        </>
+      ) : undefined}
     </article>
   );
 };

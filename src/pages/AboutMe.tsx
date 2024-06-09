@@ -37,17 +37,11 @@ function AboutMe() {
             Science and interacted with exchange students from around the world.
           </Card>
           <Card
-            title="Education"
-            description="Strategic Planning and Analysis Systems Development"
+            title="Goals"
+            description="My goals..."
             icon={faGraduationCap}
             modalTitle={"Education"}
-          >
-            Solid foundation in Linux, having used various distributions for
-            nearly 10 years, with a keen interest in experimenting with
-            commands, customization, and troubleshooting. Gained international
-            exposure during a 4-year stint in Poland, where he studied Computer
-            Science and interacted with exchange students from around the world.
-          </Card>
+          />
         </div>
       </section>
     </>
