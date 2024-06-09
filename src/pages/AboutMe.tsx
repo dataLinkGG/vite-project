@@ -5,7 +5,7 @@ import {
 import SectionTitle from "../components/Titles/Titles";
 import Card from "../components/Card/Card";
 
-function About() {
+function AboutMe() {
   return (
     <>
       <section className="centered">
@@ -54,4 +54,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutMe;

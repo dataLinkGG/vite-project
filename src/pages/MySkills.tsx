@@ -2,7 +2,7 @@ import Skill from "../components/Skill/Skill";
 import Slot from "../components/Slot/Slot";
 import SectionTitle from "../components/Titles/Titles";
 
-function Skills() {
+function MySkills() {
   return (
     <>
       <section className="centered">
@@ -23,4 +23,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default MySkills;
