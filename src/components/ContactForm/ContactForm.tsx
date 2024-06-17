@@ -24,7 +24,6 @@ const ContactForm: React.FC = () => (
     name="nest-messages"
     onFinish={onFinish}
     validateMessages={validateMessages}
-    style={{ minWidth: "100wh" }}
     layout="vertical"
   >
     <Form.Item
