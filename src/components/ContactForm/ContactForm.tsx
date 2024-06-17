@@ -13,8 +13,7 @@ const validateMessages = {
   },
 };
 /* eslint-enable no-template-curly-in-string */
-
-const onFinish = (values: any) => {
+const onFinish = (values: unknown) => {
   console.log(values);
 };
 
