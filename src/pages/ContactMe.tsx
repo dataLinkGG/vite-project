@@ -1,4 +1,4 @@
-import Slot from "../components/Slot/Slot";
+import ContactForm from "../components/ContactForm/ContactForm";
 import SectionTitle from "../components/Titles/Titles";
 
 function ContactMe() {
@@ -6,9 +6,7 @@ function ContactMe() {
     <>
       <section className="centered">
         <SectionTitle intro="Get in touch" title="Contact me" />
-        <Slot>
-          <div>A</div>
-        </Slot>
+        <ContactForm />
       </section>
     </>
   );
