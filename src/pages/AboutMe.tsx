@@ -1,5 +1,6 @@
 import {
   faBriefcase,
+  faBullseye,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import SectionTitle from "../components/Titles/Titles";
@@ -13,7 +14,7 @@ function AboutMe() {
         <div className="cards">
           <Card
             title="Experience"
-            description="Alude YC w20"
+            description="Alude (YC W20)"
             icon={faBriefcase}
             modalTitle={"Experience"}
           >
@@ -38,8 +39,8 @@ function AboutMe() {
           </Card>
           <Card
             title="Goals"
-            description="My goals..."
-            icon={faGraduationCap}
+            description="- Full Stack Development"
+            icon={faBullseye}
             modalTitle={"Education"}
           />
         </div>
