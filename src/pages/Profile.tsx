@@ -1,4 +1,5 @@
 import profilePic from "../assets/profile-pic.jpg";
+import { HeroName } from "../components/Titles/Titles";
 import styles from "./pages.module.css";
 
 const Profile = () => {
@@ -6,10 +7,7 @@ const Profile = () => {
     <section className="centered">
       <div className={styles.hero}>
         <img className={styles.profilePicture} src={profilePic} alt="" />
-        <div>
-          <h1>Thomas Cionek</h1>
-          <p>System Analyst Developer</p>
-        </div>
+        <HeroName name="Thomas Cionek" role="Full Stack Developer" />
       </div>
     </section>
   );

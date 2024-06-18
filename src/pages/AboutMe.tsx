@@ -3,8 +3,8 @@ import {
   faBullseye,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
-import SectionTitle from "../components/SectionTitle/SectionTitle";
 import Card from "../components/Card/Card";
+import { SectionTitle } from "../components/Titles/Titles";
 
 function AboutMe() {
   return (

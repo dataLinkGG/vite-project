@@ -1,6 +1,6 @@
+import { SectionTitle } from "../components/Titles/Titles";
 import Skill from "../components/Skill/Skill";
 import Slot from "../components/Slot/Slot";
-import SectionTitle from "../components/SectionTitle/SectionTitle";
 
 function MySkills() {
   return (

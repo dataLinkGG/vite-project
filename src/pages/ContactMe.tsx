@@ -1,5 +1,5 @@
 import ContactForm from "../components/ContactForm/ContactForm";
-import SectionTitle from "../components/SectionTitle/SectionTitle";
+import { SectionTitle } from "../components/Titles/Titles";
 
 function ContactMe() {
   return (
