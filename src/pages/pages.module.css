@@ -1,0 +1,11 @@
+.profilePicture {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
