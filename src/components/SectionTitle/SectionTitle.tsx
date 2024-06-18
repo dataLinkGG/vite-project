@@ -1,4 +1,4 @@
-import styles from "./Titles.module.css";
+import styles from "./SectionTitle.module.css";
 
 type SectionTitleProps = {
   title: string;
