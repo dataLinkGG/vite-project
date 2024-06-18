@@ -30,14 +30,14 @@ const ContactForm: React.FC = () => (
       label="Name"
       rules={[{ required: true }]}
     >
-      <Input />
+      <Input placeholder="Name" />
     </Form.Item>
     <Form.Item
       name={["user", "email"]}
       label="Email"
       rules={[{ type: "email", required: true }]}
     >
-      <Input />
+      <Input placeholder="Email" />
     </Form.Item>
     <Form.Item name={["user", "message"]} label="Message">
       <Input.TextArea />
