@@ -2,7 +2,7 @@ import { SectionTitle } from "../components/Titles/Titles";
 import Skill from "../components/Skill/Skill";
 import Slot from "../components/Slot/Slot";
 
-function MySkills() {
+const MySkills = () => {
   return (
     <>
       <section className="centered">
@@ -39,6 +39,6 @@ function MySkills() {
       </section>
     </>
   );
-}
+};
 
 export default MySkills;
