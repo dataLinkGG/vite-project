@@ -3,3 +3,21 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+}

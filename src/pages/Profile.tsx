@@ -7,7 +7,11 @@ const Profile = () => {
     <section className="centered">
       <div className={styles.hero}>
         <HeroPic />
-        <HeroName name="Thomas Cionek" role="Full Stack Developer" />;
+        <div className={styles.section__text}>
+          <HeroName name="Thomas Cionek" role="Full Stack Developer" />
+          <button>Download CV</button>
+          <button>Let's talk</button>
+        </div>
       </div>
     </section>
   );
