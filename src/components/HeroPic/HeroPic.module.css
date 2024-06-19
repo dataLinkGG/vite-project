@@ -1,0 +1,21 @@
+.profilePicture {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .profilePicture {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profilePicture {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+}
