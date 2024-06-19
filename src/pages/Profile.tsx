@@ -6,7 +6,11 @@ const Profile = () => {
   return (
     <section className="centered">
       <div className={styles.hero}>
-        <img className={styles.profilePicture} src={profilePic} alt="" />
+        <img
+          className={styles.profilePicture}
+          src={profilePic}
+          alt="Profile Picture"
+        />
         <HeroName name="Thomas Cionek" role="Full Stack Developer" />
       </div>
     </section>
