@@ -1,0 +1,20 @@
+.ant-menu-item {
+  border-bottom: none !important;
+}
+
+.ant-menu-item-selected {
+  border-bottom: 2px solid #1890ff !important;
+}
+.ant-menu-item::after {
+  border-bottom: none !important;
+}
+
+.ant-menu-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-menu-item {
+  flex: 1;
+  text-align: center;
+}

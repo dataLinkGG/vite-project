@@ -3,7 +3,7 @@ import { SectionTitle } from "../components/Titles/Titles";
 
 const ContactMe = () => {
   return (
-    <section className="centered">
+    <section id="contact" className="centered">
       <SectionTitle intro="Get in touch" title="Contact me" />
       <ContactForm />
     </section>

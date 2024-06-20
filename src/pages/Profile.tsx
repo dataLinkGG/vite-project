@@ -4,7 +4,7 @@ import styles from "./pages.module.css";
 
 const Profile = () => {
   return (
-    <section className="centered">
+    <section id="home" className="centered">
       <div className={styles.hero}>
         <HeroPic />
         <div className={styles.section__text}>

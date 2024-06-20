@@ -8,7 +8,7 @@ import { SectionTitle } from "../components/Titles/Titles";
 
 const AboutMe = () => {
   return (
-    <section className="centered">
+    <section id="about" className="centered">
       <SectionTitle intro="Get to know more" title="About me" />
       <div className="cards">
         <Card

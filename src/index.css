@@ -8,6 +8,7 @@
 @import url("CSS/nav-multi-level.css");
 @import url("CSS/nav-mixed.css");
 @import url("CSS/nav-social.css");
+@import url("CSS/ant-anchor.css");
 
 :root {
   --primary-color: #90ee90;
@@ -42,7 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 120vh; /* for some reason, 100vh bugs Ant Anchor */
   }
   .cards {
     margin-top: inherit;
