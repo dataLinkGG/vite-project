@@ -26,20 +26,23 @@ const ContactForm: React.FC = () => (
     layout="vertical"
   >
     <Form.Item
-      name={["user", "name"]}
-      label="Name"
+      name={["name"]}
+      label={<label style={{ color: "var(--text-color)" }}>Name</label>}
       rules={[{ required: true }]}
     >
       <Input placeholder="Name" />
     </Form.Item>
     <Form.Item
-      name={["user", "email"]}
-      label="Email"
-      rules={[{ type: "email", required: true }]}
+      name={["email"]}
+      label={<label style={{ color: "var(--text-color)" }}>Email</label>}
+      rules={[{ required: true }]}
     >
       <Input placeholder="Email" />
     </Form.Item>
-    <Form.Item name={["user", "message"]} label="Message">
+    <Form.Item
+      name={["message"]}
+      label={<label style={{ color: "var(--text-color)" }}>Message</label>} // Set label color to blue      rules={[{ type: "email", required: true }]}
+    >
       <Input.TextArea />
     </Form.Item>
     <Form.Item>

@@ -1,6 +1,6 @@
 .slot {
   border-radius: 1rem;
-  border: black 0.1rem dashed;
+  border: var(--text-color) 0.1rem dashed;
   text-align: center;
   margin-bottom: 2em;
   flex: 0 0 30%;

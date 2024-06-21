@@ -19,9 +19,33 @@
   --text-color: #e7e7e7;
 }
 
+html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+p,
+div,
+label {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 300ms ease;
+}
+
 .icon {
-  cursor: pointer;
   height: 2rem;
+  color: var(--primary-color);
 }
 
 @media screen and (min-width: 40em) {

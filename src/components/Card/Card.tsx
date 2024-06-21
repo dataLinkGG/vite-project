@@ -1,7 +1,7 @@
 import { IconDefinition, faSearch } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Card.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Modal } from "antd";
+import { Button, ConfigProvider, Modal } from "antd";
 import { useState } from "react";
 
 type CardProps = {
@@ -32,14 +32,28 @@ const Card: React.FC<CardProps> = ({
       </div>
       {children ? (
         <>
-          <Button
-            className={styles.centeredButton}
-            onClick={() => setModalOpen(true)}
+          <ConfigProvider
+            theme={{
+              components: {
+                Button: {
+                  colorPrimary: `transparent`,
+                  colorPrimaryHover: `var(--secondary-color)`,
+                  lineWidth: 0,
+                },
+              },
+            }}
           >
-            <div>
-              <FontAwesomeIcon icon={faSearch} /> See More
-            </div>
-          </Button>
+            <Button
+              type="primary"
+              style={{ border: "var(--text-color) 1px solid" }}
+              className={styles.centeredButton}
+              onClick={() => setModalOpen(true)}
+            >
+              <div>
+                <FontAwesomeIcon icon={faSearch} /> See More
+              </div>
+            </Button>
+          </ConfigProvider>
 
           <Modal
             title={modalTitle}
@@ -50,7 +64,7 @@ const Card: React.FC<CardProps> = ({
             cancelText="Close"
             footer
           >
-            {children}
+            <p style={{ color: "black" }}> {children}</p>
           </Modal>
         </>
       ) : undefined}
