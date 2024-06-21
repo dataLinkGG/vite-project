@@ -31,6 +31,7 @@ nav {
 }
 
 .menuLinks {
+  padding: 0;
   position: absolute;
   top: 100%;
   right: 0;
@@ -39,6 +40,8 @@ nav {
   max-height: 0;
   transition: all 0.3 ease-in-out;
   overflow: hidden;
+  border-radius: 10%;
+  background-color: #00000067;
 }
 
 .menuLinks a {
