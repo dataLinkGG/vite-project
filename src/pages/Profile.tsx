@@ -2,7 +2,7 @@ import AntButton from "../components/AntButton/AntButton";
 import HeroPic from "../components/HeroPic/HeroPic";
 import { HeroName } from "../components/Titles/Titles";
 import styles from "./pages.module.css";
-import { Divider, Tooltip } from "antd";
+import { Tooltip } from "antd";
 
 import { DownOutlined, DownloadOutlined } from "@ant-design/icons";
 
