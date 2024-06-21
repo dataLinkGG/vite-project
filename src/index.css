@@ -67,7 +67,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 120vh; /* for some reason, 100vh bugs Ant Anchor */
+    height: 110vh; /* for some reason, 100vh bugs Ant Anchor */
   }
   .cards {
     margin-top: inherit;
