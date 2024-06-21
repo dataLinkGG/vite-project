@@ -7,7 +7,7 @@
 .section__text {
   align-self: center;
   text-align: center;
-  margin: 2rem;
+  margin: 5rem;
 }
 
 @media screen and (max-width: 1200px) {

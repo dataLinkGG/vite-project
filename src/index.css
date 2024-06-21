@@ -81,9 +81,36 @@ a {
 
 @keyframes bobbing {
   from {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
   to {
-    transform: translateY(-2px);
+    transform: translateY(-0.25em);
   }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-container {
+    flex-wrap: wrap;
+  }
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.largeIcon {
+  font-size: 2rem;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
