@@ -1,9 +1,10 @@
-import { DownloadOutlined } from "@ant-design/icons";
 import AntButton from "../components/AntButton/AntButton";
 import HeroPic from "../components/HeroPic/HeroPic";
 import { HeroName } from "../components/Titles/Titles";
 import styles from "./pages.module.css";
-import { Divider } from "antd";
+import { Divider, Tooltip } from "antd";
+
+import { DownOutlined, DownloadOutlined } from "@ant-design/icons";
 
 const Profile = () => {
   const cvThomasPath = "./CV_Thomas_Cionek_EN.pdf";
@@ -29,7 +30,15 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <Divider />
+      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Tooltip title="🖱️️ Scroll down">
+          <div className="animated-icon">
+            <a href="#about" style={{ color: "var(--text-color)" }}>
+              <DownOutlined />
+            </a>
+          </div>
+        </Tooltip>
+      </div>
     </section>
   );
 };

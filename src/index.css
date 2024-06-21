@@ -73,3 +73,17 @@ a {
     margin-top: inherit;
   }
 }
+
+.animated-icon {
+  animation: bobbing 1.2s ease-in-out infinite alternate;
+  scroll-behavior: smooth;
+}
+
+@keyframes bobbing {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
