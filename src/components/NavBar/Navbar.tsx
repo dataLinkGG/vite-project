@@ -11,12 +11,12 @@ const handleMenuClick = (e: { key: string }) => {
 
 const Nav = (): JSX.Element => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
-  const [currentSection, setCurrentSection] = useState<string>(""); // Track current section
+  const [currentSection, setCurrentSection] = useState<string>("");
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1400);
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "contact"]; // Your section IDs
+      const sections = ["home", "about", "skills", "contact"];
       const scrollY = window.scrollY;
       let newCurrentSection = "";
 
