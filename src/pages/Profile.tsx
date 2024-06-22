@@ -5,7 +5,7 @@ import { HeroName } from "../components/Titles/Titles";
 import styles from "./pages.module.css";
 import { Tooltip } from "antd";
 
-import { DownOutlined, DownloadOutlined } from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN } from "../constants";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
@@ -26,7 +26,6 @@ const Profile = () => {
                 window.open(cvThomasPath, "_blank");
               }}
             >
-              <DownloadOutlined />
               Download CV
             </AntButton>
             <ContactInfo />
