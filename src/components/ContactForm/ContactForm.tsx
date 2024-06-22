@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
         </Form.Item>
         <Form.Item
           name={["message"]}
-          label={<label style={{ color: "var(--text-color)" }}>Message</label>} // Set label color to blue      rules={[{ type: "email", required: true }]}
+          label={<label style={{ color: "var(--text-color)" }}>Message</label>}
         >
           <Input.TextArea />
         </Form.Item>
