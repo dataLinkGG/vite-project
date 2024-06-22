@@ -26,7 +26,7 @@ const AboutMe = () => {
         </Card>
         <Card
           title="Education"
-          description="Strategic Planning and Analysis Systems Development"
+          description="Analysis and Systems Development"
           icon={faGraduationCap}
           modalTitle={"Education"}
         >
