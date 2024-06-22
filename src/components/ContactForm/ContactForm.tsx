@@ -37,7 +37,7 @@ const ContactForm: React.FC = () => {
   const openWarningNotification = (placement: NotificationPlacement) => {
     api.warning({
       message: "Message not sent...",
-      description: "Please fill out all fields ",
+      description: "Please fill out all fields.",
       placement,
     });
   };
