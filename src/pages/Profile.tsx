@@ -8,6 +8,7 @@ import { Tooltip } from "antd";
 import { DownOutlined, DownloadOutlined } from "@ant-design/icons";
 import IconLink from "../components/IconLink/IconLink";
 import { GITHUB, LINKEDIN } from "../constants";
+import ContactInfo from "../components/ContactInfo/ContactInfo";
 
 const Profile = () => {
   const cvThomasPath = "./CV_Thomas_Cionek_EN.pdf";
@@ -28,7 +29,7 @@ const Profile = () => {
               <DownloadOutlined />
               Download CV
             </AntButton>
-            <AntButton onClick={() => {}}>Let's Talk</AntButton>
+            <ContactInfo />
           </div>
           <div className="socials-container">
             <IconLink url={LINKEDIN} altText="My LinkedIn profile">
