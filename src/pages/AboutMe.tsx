@@ -17,12 +17,12 @@ const AboutMe = () => {
           icon={faBriefcase}
           modalTitle={"Experience"}
         >
-          Worked with Python, JavaScript, TypeScript, and PostgreSQL.
-          Interactively customized React components from Ant Design based on the
-          product models of Figma, working in Scrum methodology, with Code
-          Reviews, product and team retrospectives meetings. Engagingly
-          implemented back-end library functionalities and actively interacted
-          with the database.
+          Worked with <b>Python</b>, <b>JavaScript</b>, and <b>PostgreSQL</b>.
+          Interactively customized TypeScript React components from Ant Design
+          based on the product models of Figma, working in Scrum methodology,
+          with Code Reviews, product and team retrospectives meetings.
+          Engagingly implemented back-end library functionalities and actively
+          interacted with the database.
         </Card>
         <Card
           title="Education"
