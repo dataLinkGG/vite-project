@@ -30,7 +30,7 @@ const Profile = () => {
             </AntButton>
             <AntButton onClick={() => {}}>Let's Talk</AntButton>
           </div>
-          <div id="socials-container">
+          <div className="socials-container">
             <IconLink url={LINKEDIN} altText="My LinkedIn profile">
               <LinkedinOutlined className="largeIcon" />
             </IconLink>

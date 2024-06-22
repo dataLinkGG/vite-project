@@ -100,7 +100,7 @@ a {
   }
 }
 
-#socials-container {
+.socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
