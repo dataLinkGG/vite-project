@@ -7,16 +7,31 @@ const MySkills = () => {
     <section id="skills" className="centered">
       <SectionTitle intro="Explore my" title="Skills" />
       <Slot>
-        <Skill name="JavaScript" expertise={3}>
+        <Skill
+          name="JavaScript"
+          expertise={3}
+          tooltipTitle="JavaScript, which started as a scripting language, is now widely used to enhance web page functionality, including animations, dynamic content updates, and user interactions."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
         </Skill>
-        <Skill name="Python" expertise={2}>
+        <Skill
+          name="Python"
+          expertise={2}
+          tooltipTitle="Python is a high-level, general-purpose programming language known for its simplicity and vast standard library."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
         </Skill>
-        <Skill name="PostegreSQL" expertise={1}>
+        <Skill
+          name="PostegreSQL"
+          expertise={1}
+          tooltipTitle="PostgreSQL is relational database management system that emphasizes extensibility and SQL compliance. It is known for its high levels of resilience, integrity, and correctness."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
         </Skill>
-        <Skill name="TypeScript">
+        <Skill
+          name="TypeScript"
+          tooltipTitle="TypeScript is a superset of JavaScript that adds optional static type annotations, which can make the development of large-scale applications safer and more scalable."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         </Skill>
         <Skill name="React">
@@ -28,13 +43,19 @@ const MySkills = () => {
         <Skill name="Linux">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
         </Skill>
-        <Skill name="Git">
+        <Skill
+          name="Git"
+          tooltipTitle="Just like a time traveler, Git allows going back to any previous version of your code, see what changes were made, restore an older version if needed and even creating different time-lines - the so called branches, or detached universes, thought a fork."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
         </Skill>
         <Skill name="Figma">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
         </Skill>
-        <Skill name="AntDesign">
+        <Skill
+          name="AntDesign"
+          tooltipTitle="A design language and a set of UI components for building scalable and maintainable applications."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg" />
         </Skill>
       </Slot>
