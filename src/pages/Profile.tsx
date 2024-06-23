@@ -43,9 +43,7 @@ const Profile = () => {
       <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
         <Tooltip title="🖱️️ Scroll down">
           <div className="animated-icon">
-            <a href="#about" style={{ color: "var(--text-color)" }}>
-              <DownOutlined />
-            </a>
+            <DownOutlined />
           </div>
         </Tooltip>
       </div>
