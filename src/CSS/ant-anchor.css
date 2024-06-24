@@ -5,6 +5,7 @@
 .ant-menu-item-selected {
   border-bottom: 2px solid var(--primary-color) !important;
 }
+
 .ant-menu-item::after {
   border-bottom: none !important;
 }
