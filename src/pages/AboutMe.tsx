@@ -38,7 +38,12 @@ const AboutMe = () => {
         </Card>
         <Card
           title="Goals"
-          description="- Full Stack Development"
+          description={
+            <>
+              - Full Stack Development
+              <br />- Freelancing
+            </>
+          }
           icon={faBullseye}
           modalTitle={"Education"}
         />
