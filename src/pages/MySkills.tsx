@@ -34,7 +34,10 @@ const MySkills = () => {
         >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         </Skill>
-        <Skill name="React">
+        <Skill
+          name="React"
+          tooltipTitle="React is a JavaScript library that builds interfaces like chemistry: tiny, reusable components (atoms & buttons) combine to form bigger UI elements (molecules & forms)."
+        >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
         </Skill>
         <Skill name="Flask">
@@ -57,6 +60,19 @@ const MySkills = () => {
           tooltipTitle="A design language and a set of UI components for building scalable and maintainable applications."
         >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg" />
+        </Skill>
+
+        <Skill
+          name="Vim"
+          tooltipTitle="Vim is a keyboard-focused editor with unique modes (command, insert, visual) for efficient editing without a mouse. Its shortcuts are transferable across many editors and tools."
+        >
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
+        </Skill>
+        <Skill
+          name="Docker"
+          tooltipTitle="Docker packages apps in self-contained containers built from images. Imagine Lego bricks for software - each container runs isolated, sharing the host's OS. Volumes store data outside containers, so it persists even when they stop or restart."
+        >
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
         </Skill>
       </Slot>
     </section>
