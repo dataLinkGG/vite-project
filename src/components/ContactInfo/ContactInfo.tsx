@@ -81,6 +81,11 @@ const ContactInfo: React.FC = () => {
         />
         <Divider />
       </Drawer>
+        <Tooltip title="📱 Scan me!">
+          <div>
+            <img className="qr-code" src={qr_code} alt="" />
+          </div>
+        </Tooltip>
     </>
   );
 };
