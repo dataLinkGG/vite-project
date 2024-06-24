@@ -1,12 +1,11 @@
 import React from "react";
 import type { DrawerProps } from "antd";
-import { Drawer } from "antd";
+import { Drawer, List, Divider } from "antd";
 import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
-import { DISCORD, WHATSAPP } from "../../constants";
+import { DISCORD, WHATSAPP } from "../../constants"; // Assuming PHONE_NUMBER is defined
 import IconLink from "../IconLink/IconLink";
 import { DiscordOutlined } from "@ant-design/icons";
 import AntButton from "../AntButton/AntButton";
-import Slot from "../Slot/Slot";
 
 const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -38,28 +37,49 @@ const ContactInfo: React.FC = () => {
       <AntButton onClick={showDrawer}>Let's Talk</AntButton>
       <Drawer
         destroyOnClose
-        title="Contact Information "
+        title="Contact Information"
         placement="right"
         open={open}
-        width={500}
+        width={375} // Adjusted width for better layout
         loading={loading}
         onClose={onClose}
-        style={{
-          backgroundColor: "var(--background-color)",
-          color: "white",
-        }}
       >
-        <Slot>
-          <a href="href=mailto:“thomascionek97@gmail.com">
-            <MailOutlined className="largeIcon" />
-          </a>
-          <IconLink url={WHATSAPP} altText="My Github profile">
-            <WhatsAppOutlined className="largeIcon" />
-          </IconLink>
-          <IconLink url={DISCORD} altText="My Discord profile">
-            <DiscordOutlined className="largeIcon" />
-          </IconLink>
-        </Slot>
+        <List
+          itemLayout="horizontal"
+          dataSource={[
+            {
+              title: "Email:",
+              content: (
+                <a href="href=mailto:“thomascionek97@gmail.com">
+                  <MailOutlined style={{ color: "black" }} />
+                </a>
+              ),
+            },
+            {
+              title: "WhatsApp:",
+              content: (
+                <IconLink url={WHATSAPP} altText="WhatsApp">
+                  <WhatsAppOutlined style={{ color: "black" }} />
+                </IconLink>
+              ),
+            },
+            {
+              title: "Discord:",
+              content: (
+                <IconLink url={DISCORD} altText="Discord">
+                  <DiscordOutlined style={{ color: "black" }} />
+                </IconLink>
+              ),
+            },
+          ]}
+          renderItem={(item) => (
+            <List.Item>
+              <List.Item.Meta title={item.title} />
+              {item.content}
+            </List.Item>
+          )}
+        />
+        <Divider />
       </Drawer>
     </>
   );
