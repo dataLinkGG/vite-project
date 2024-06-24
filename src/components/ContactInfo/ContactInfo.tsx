@@ -1,11 +1,15 @@
 import React from "react";
 import type { DrawerProps } from "antd";
-import { Drawer, List, Divider } from "antd";
-import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
-import { DISCORD, WHATSAPP } from "../../constants"; // Assuming PHONE_NUMBER is defined
+import { Drawer, List, Divider, Tooltip } from "antd";
+import {
+  MailOutlined,
+  WhatsAppOutlined,
+  DiscordFilled,
+} from "@ant-design/icons";
+import { DISCORD, WHATSAPP } from "../../constants";
 import IconLink from "../IconLink/IconLink";
-import { DiscordOutlined } from "@ant-design/icons";
 import AntButton from "../AntButton/AntButton";
+import qr_code from "../../assets/qr_black_white_rounded.png";
 
 const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -51,7 +55,7 @@ const ContactInfo: React.FC = () => {
               title: "Email:",
               content: (
                 <a href="href=mailto:“thomascionek97@gmail.com">
-                  <MailOutlined style={{ color: "black" }} />
+                  <MailOutlined />
                 </a>
               ),
             },
@@ -59,7 +63,7 @@ const ContactInfo: React.FC = () => {
               title: "WhatsApp:",
               content: (
                 <IconLink url={WHATSAPP} altText="WhatsApp">
-                  <WhatsAppOutlined style={{ color: "black" }} />
+                  <WhatsAppOutlined />
                 </IconLink>
               ),
             },
@@ -67,7 +71,7 @@ const ContactInfo: React.FC = () => {
               title: "Discord:",
               content: (
                 <IconLink url={DISCORD} altText="Discord">
-                  <DiscordOutlined style={{ color: "black" }} />
+                  <DiscordFilled />
                 </IconLink>
               ),
             },
@@ -80,12 +84,12 @@ const ContactInfo: React.FC = () => {
           )}
         />
         <Divider />
-      </Drawer>
         <Tooltip title="📱 Scan me!">
           <div>
             <img className="qr-code" src={qr_code} alt="" />
           </div>
         </Tooltip>
+      </Drawer>
     </>
   );
 };
