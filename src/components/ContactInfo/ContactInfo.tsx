@@ -44,7 +44,7 @@ const ContactInfo: React.FC = () => {
         title="Contact Information"
         placement="right"
         open={open}
-        width={375} // Adjusted width for better layout
+        width={375}
         loading={loading}
         onClose={onClose}
       >
