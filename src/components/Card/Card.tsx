@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type CardProps = {
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: IconDefinition;
   modalTitle: string;
   children?: React.ReactNode;
