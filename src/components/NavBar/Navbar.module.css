@@ -104,6 +104,10 @@ nav {
   transition: all 0.3 ease-in-out;
 }
 
+.hamburgerIcon:hover * {
+  background-color: var(--primary-color);
+}
+
 .hamburgerIcon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
