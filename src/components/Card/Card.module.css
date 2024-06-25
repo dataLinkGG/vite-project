@@ -56,3 +56,8 @@
   flex-basis: 10%;
   margin: 0.3rem;
 }
+
+.icon {
+  color: var(--primary-color);
+  height: 2rem;
+}

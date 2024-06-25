@@ -36,10 +36,6 @@ label {
   color: var(--text-color);
 }
 
-.icon {
-  height: 2rem;
-}
-
 a {
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;

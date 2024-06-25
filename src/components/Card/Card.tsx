@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <article className={styles.card}>
       <div className={styles.thumbnail}>
-        <FontAwesomeIcon className="icon" icon={icon} />
+        <FontAwesomeIcon className={styles.icon} icon={icon} />
       </div>
       <div className={styles.cardContent}>
         <h2>{title}</h2>
