@@ -8,7 +8,6 @@ import qr_code from "../../assets/qr_black_white_rounded.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import styles from "./ContactInfo.module.css";
 
 const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -57,7 +56,7 @@ const ContactInfo: React.FC = () => {
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     color="black"
-                    className={styles.ContactInfoIcon}
+                    style={{ width: "24px", height: "24px" }}
                   />
                 </a>
               ),
@@ -69,7 +68,7 @@ const ContactInfo: React.FC = () => {
                   <FontAwesomeIcon
                     icon={faWhatsapp}
                     color="black"
-                    className={styles.ContactInfoIcon}
+                    style={{ width: "24px", height: "24px" }}
                   />
                 </IconLink>
               ),
@@ -81,7 +80,7 @@ const ContactInfo: React.FC = () => {
                   <FontAwesomeIcon
                     icon={faDiscord}
                     color="black"
-                    className={styles.ContactInfoIcon}
+                    style={{ width: "24px", height: "24px" }}
                   />
                 </IconLink>
               ),
