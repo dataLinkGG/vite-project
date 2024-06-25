@@ -100,13 +100,13 @@ a:hover {
 
 .largeIcon {
   font-size: 2rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .socials-container a {
