@@ -1,13 +1,14 @@
 import React from "react";
 import type { DrawerProps } from "antd";
 import { Drawer, List, Divider, Tooltip } from "antd";
-import { MailOutlined, DiscordFilled } from "@ant-design/icons";
 import { DISCORD, WHATSAPP } from "../../constants";
 import IconLink from "../IconLink/IconLink";
 import AntButton from "../AntButton/AntButton";
 import qr_code from "../../assets/qr_black_white_rounded.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import styles from "./ContactInfo.module.css";
 
 const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -53,7 +54,11 @@ const ContactInfo: React.FC = () => {
               title: "Email:",
               content: (
                 <a href="href=mailto:“thomascionek97@gmail.com">
-                  <MailOutlined />
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    color="black"
+                    className={styles.ContactInfoIcon}
+                  />
                 </a>
               ),
             },
@@ -61,7 +66,11 @@ const ContactInfo: React.FC = () => {
               title: "WhatsApp:",
               content: (
                 <IconLink url={WHATSAPP} altText="WhatsApp">
-                  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    color="black"
+                    className={styles.ContactInfoIcon}
+                  />
                 </IconLink>
               ),
             },
@@ -69,7 +78,11 @@ const ContactInfo: React.FC = () => {
               title: "Discord:",
               content: (
                 <IconLink url={DISCORD} altText="Discord">
-                  <DiscordFilled />
+                  <FontAwesomeIcon
+                    icon={faDiscord}
+                    color="black"
+                    className={styles.ContactInfoIcon}
+                  />
                 </IconLink>
               ),
             },
