@@ -36,16 +36,6 @@ label {
   color: var(--text-color);
 }
 
-a {
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
-  transition: all 300ms ease;
-}
-
-a:hover {
-  color: var(--primary-color);
-}
-
 @media screen and (min-width: 40em) {
   .main-area {
     flex: 1 1 auto;

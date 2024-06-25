@@ -1,15 +1,13 @@
 import React from "react";
 import type { DrawerProps } from "antd";
 import { Drawer, List, Divider, Tooltip } from "antd";
-import {
-  MailOutlined,
-  WhatsAppOutlined,
-  DiscordFilled,
-} from "@ant-design/icons";
+import { MailOutlined, DiscordFilled } from "@ant-design/icons";
 import { DISCORD, WHATSAPP } from "../../constants";
 import IconLink from "../IconLink/IconLink";
 import AntButton from "../AntButton/AntButton";
 import qr_code from "../../assets/qr_black_white_rounded.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -63,7 +61,7 @@ const ContactInfo: React.FC = () => {
               title: "WhatsApp:",
               content: (
                 <IconLink url={WHATSAPP} altText="WhatsApp">
-                  <WhatsAppOutlined />
+                  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
                 </IconLink>
               ),
             },
