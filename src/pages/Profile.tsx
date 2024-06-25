@@ -7,7 +7,7 @@ import { Tooltip } from "antd";
 
 import { DownOutlined } from "@ant-design/icons";
 import IconLink from "../components/IconLink/IconLink";
-import { GITHUB, LINKEDIN } from "../constants";
+import { GITHUB, LINKEDIN, ROLE } from "../constants";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 
 const Profile = () => {
@@ -18,7 +18,7 @@ const Profile = () => {
       <div className={styles.hero}>
         <HeroPic />
         <div className={styles.section__text}>
-          <HeroName name="Thomas Cionek" role="Full Stack Developer" />
+          <HeroName name="Thomas Cionek" role={ROLE} />
           <div className="btn-container">
             <AntButton
               type="text"
